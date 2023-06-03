@@ -1,0 +1,54 @@
+.video-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-popup {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    max-width: 1000px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.video-popup iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.video-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.video-popup-close:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 576px) {
+    .video-popup {
+        height: 80%;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/cde73ba9-fd5e-4bd8-e441-ead71a358500/public" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>YSyncX</title>
+</head>
+<body class="p-4 grid place-items-center min-h-screen overflow-hidden h-full bg-cover bg-no-repeat bg-center bg-[url('https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/8d3e1f6e-4f0c-411f-6f38-e0486e6e6a00/background')]">
+    <div class="space-y-5 max-w-[630px] w-full pb-44">
+        <div class="mx-auto w-3/5">
+            <a href="/">
+                <img class="mx-auto logo_big sm:w-80" src="https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/0caab423-077a-401e-4d43-32be986e6e00/public" width="200" alt="Logo">
+            </a>
+        </div>
+        <div class="relative">
+            <label for="yxSearch" class="cursor-pointer absolute top-0 right-0 z-10 text-md text-gray-500 grid place-content-center h-11 w-10"><i class='bx bx-search'></i></label>
+            <input type="text" id="yxSearch">
+        </div>
+        <div class="grid sm:grid-cols-2 pt-4 px-6 text-[13px] space-y-2 sm:space-y-0">
+            <div class="sm:col-span-1 text-center sm:text-left">
+                <button onclick="window.location.href='/page.html?id=180_16'" type="button" class="bg-white px-2 h-6 rounded hover:bg-[#65a0c8] hover:text-white">Resource Book</button>
+                <button id="videoBtn" type="button" class="bg-white px-2 h-6 rounded hover:bg-[#65a0c8] hover:text-white">Demo Video</button>
+            </div>
+            <div class="sm:col-span-1 flex item-center">
+                <label for="searchType" class="text-white leading-6 hidden sm:block">Search</label>
+                <select name="searchType" id="searchType" class="w-full ml-2 rounded h-6 outline-none">
+                    <option selected value="Tag">1) X Tags (search topics)</option>
+                    <option value="Thread">2) Y Thread Containers (search books, articles, podcasts, and videos)</option>
+                    <option value="Post">3) Ask YSyncX a Question (responds with answer and excerpts)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"></script>
+    <script src="js/selectizeData.js"></script>
+    <script src="js/video-popup.js"></script>
+</body>
+</html>
+

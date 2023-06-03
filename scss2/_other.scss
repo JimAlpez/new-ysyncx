@@ -1,0 +1,41 @@
+.line-v {
+    button:not(:last-child)::before {
+        position: absolute;
+        content: "";
+        top: 2px;
+        right: -10px;
+        bottom: 2px;
+        border-right: 2px solid #808080;
+    }
+    li:not(:last-child)::before {
+        position: absolute;
+        content: "";
+        top: 2px;
+        right: -10px;
+        bottom: 2px;
+        border-right: 2px solid #808080;
+    }
+}
+
+.activeX,.activeY {
+    color: #6b7280;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 20px;
+}
+.activeX.active {
+    color: #182cff;
+    background: #e0edff;
+    border-color: #182cff;
+}
+.activeY.active {
+    color: #2c9a49;
+    background: #e4ffe5;
+    border-color: #aaf2a5;
+}
+
+.shadow-no-top {
+    box-shadow: 1px 0px 0px 0px #000, -1px 0px 0px 0px #000, 0px 1px 0px 0px #000, inset 1px 0px 0px 0px #000, inset -1px 0px 0px 0px #000, inset 0px -1px 0px 0px #000;
+}

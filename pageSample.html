@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/cde73ba9-fd5e-4bd8-e441-ead71a358500/public" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>YSyncX</title>
+</head>
+<body class="bg-cover bg-no-repeat bg-center bg-[url('https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/035f093c-de07-4803-00d0-c1658d917f00/public')]">
+    <header class="p-6 bg-cover bg-no-repeat bg-center bg-[url('https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/e9dcc63b-fda7-45fd-4444-99da9c174600/public')]">
+        <div class="w-24 absolute left-0 top-0 mt-3 ml-3">
+            <a href="/">
+                <img class="mx-auto" src="https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/0caab423-077a-401e-4d43-32be986e6e00/public" alt="Logo">
+            </a>
+        </div>
+        <div class="relative selectize-float h-12 z-10 max-w-3xl w-full mx-auto pb-2">
+            <label for="yxSearch" class="cursor-pointer absolute top-0 right-0 z-10 text-md text-gray-500 grid place-content-center h-11 w-10"><i class='bx bx-search'></i></label>
+            <input type="text" id="yxSearch">
+        </div>
+        <div class="max-w-3xl mx-auto grid sm:grid-cols-2 pt-4 px-6 text-[13px] space-y-2 sm:space-y-0">
+            <div class="sm:col-span-1 text-center sm:text-left">
+                <button type="button" class="bg-white px-2 h-6 rounded hover:bg-[#65a0c8] hover:text-white">Library</button>
+            </div>
+            <div class="sm:col-span-1 flex item-center">
+                <label for="searchType" class="text-white text-base">Search</label>
+                <select name="searchType" id="searchType" class="w-full ml-2 rounded-full h-6 outline-none">
+                    <option selected value="Tag">1) X Tags (search topics)</option>
+                    <option value="Thread">2) Y Thread Containers (search books, articles, podcasts, and videos)</option>
+                    <option value="Post">3) Ask YSyncX a Question (responds with answer and excerpts)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <div class="grid sm:grid-cols-2 gap-x-8 mx-3 border-t-0 border-[3px] border-solid border-[#b3ffae]" style="box-shadow: 1px 0px 0px 0px #000, -1px 0px 0px 0px #000, 0px 1px 0px 0px #000, inset 1px 0px 0px 0px #000, inset -1px 0px 0px 0px #000, inset 0px -1px 0px 0px #000;">
+        <div class="sm:col-span-1">
+            <div class="text-[13px] m-4 sm:m-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-1">
+                        <button class="grid place-items-center rounded-full bg-red-500" type="button"><i class='bx bx-x'></i></button>
+                        <button class="grid place-items-center rounded-full bg-orange-500" type="button"><i class='bx bx-minus'></i></button>
+                        <button class="rounded text-[#2c9a49] bg-[#e4ffe5] border border-solid border-[#aaf2a5] px-2" type="button">Active (Y) Thread</button>
+                    </div>
+                    <div class="line-v flex items-center gap-1">
+                        <label>Mode:</label>
+                        <div class="flex items-center gap-4">
+                            <button type="button" class="relative rounded px-1">Read</button>
+                            <button type="button" class="relative rounded px-1">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2"></div>
+                <div class="shadow-[rgba(0,0,0,.24)_0px_3px_8px]">
+                    <div class="bg-[#f4f4f4]">
+                        <headline-component
+                            target-id="block-details-1"
+                            thread-container="Y4 (Original Book) | YSyncX Resource Book"
+                            block-type="Thread Container"
+                        ></headline-component>
+                        <ul class="line-v flex items-center gap-4 px-6">
+                            <li class="relative">Block Publication: <span class="bg-white">00/00/00</span></li>
+                            <li class="relative">Edited: <span class="bg-white">NA</span></li>
+                        </ul>
+                        <ul class="line-v flex items-center gap-4 px-6">
+                            <li>Length: <span class="bg-white">NA</span></li>
+                        </ul>
+                        <h2 class="text-2xl font-bold text-center px-6 py-4">YSyncX Resource Book</h2>
+                        <img src="https://imagedelivery.net/6JkaVsfAvbV7M0nIAmm2-g/373bf977-c007-4838-67f1-2246323b5d00/public" alt="YSyncX Resource Book">
+                    </div>
+                    <div class="bg-white">
+                        <div class="p-6 flex items-center justify-between">
+                            <label for="" class="text-base font-bold">Thread Container Table of Contents:</label>
+                            <button type="button" class="block-toggle rounded-full border border-solid border-black h-[13px] w-[13px] grid place-items-center text-base" data-target="ThreadContainer"><i class='bx bx-chevron-down ml-[-2px] mt-[-2px]'></i></button>
+                        </div>
+                        <div id="ThreadContainer" style="display: none;">Hello World</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:col-span-1">
+            2
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"></script>
+    <script src="js/selectizeData.js"></script>
+    <script type="module" src="components/header.js"></script>
+    <script type="module" src="components/contents/headline.js"></script>
+    
+    <script src="js/toggleClick.js"></script>
+</body>
+</html>
